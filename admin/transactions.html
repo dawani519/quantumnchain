@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions Management - Quantum Chain</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <a href="../index.html">
+                    <img src="/placeholder.svg?height=40&width=160" alt="Quantum Chain Logo">
+                </a>
+            </div>
+            <div class="sidebar-menu">
+                <a href="dashboard.html" class="sidebar-menu-item">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="users.html" class="sidebar-menu-item">
+                    <i class="fas fa-users"></i>
+                    <span>Users</span>
+                </a>
+                <a href="transactions.html" class="sidebar-menu-item active">
+                    <i class="fas fa-history"></i>
+                    <span>Transactions</span>
+                </a>
+                <a href="settings.html" class="sidebar-menu-item">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+                <a href="#" class="sidebar-menu-item" id="adminLogoutBtn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="topbar">
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="user-info">
+                    <div class="user-name">Admin Panel</div>
+                    <div class="avatar">A</div>
+                </div>
+            </div>
+            <div class="content-area">
+                <div class="dashboard-card">
+                    <div class="dashboard-card-header">
+                        <div class="dashboard-card-title">Transactions Management</div>
+                    </div>
+                    <div class="filter-controls">
+                        <input type="text" id="searchTransaction" placeholder="Search by ID or user">
+                        <select id="typeFilter">
+                            <option value="all">All Types</option>
+                            <option value="deposit">Deposits</option>
+                            <option value="withdrawal">Withdrawals</option>
+                            <option value="profit">Profit</option>
+                        </select>
+                        <select id="statusFilter">
+                            <option value="all">All Status</option>
+                            <option value="completed">Completed</option>
+                            <option value="pending">Pending</option>
+                            <option value="failed">Failed</option>
+                        </select>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>User</th>
+                                    <th>Type</th>
+                                    <th>Amount</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="transactionsList">
+                                <!-- Transactions will be loaded here -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination" id="transactionsPagination">
+                        <!-- Pagination will be loaded here -->
+                    </div>
+
+                    <!-- NEW SECTION: Pending Transactions Table -->
+                    <div class="pending-transactions-section">
+                        <!-- Section title for pending transactions -->
+                        <h2>Pending Transactions</h2>
+                        <div class="table-responsive">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>User</th>
+                                        <th>Date</th>
+                                        <th>Amount</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="pendingTransactionsList">
+                                    <!-- Pending transactions will be loaded here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- END NEW SECTION -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Transaction Details Modal -->
+    <div id="transactionModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Transaction Details</h2>
+            <div class="transaction-details" id="transactionDetails">
+                <!-- Transaction details will be loaded here -->
+            </div>
+            <div class="action-buttons">
+                <button class="btn btn-success" id="approveTransactionBtn">Approve</button>
+                <button class="btn btn-danger" id="rejectTransactionBtn">Reject</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/admin-transactions.js"></script>
+</body>
+</html>

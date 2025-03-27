@@ -1,0 +1,70 @@
+Received Data: Array
+(
+    [name] => John Doe
+    [email] => johndoe@example.com
+    [wallet_address] => zcvzzxvczxzcvcxzv
+)
+
+Before Update: Array
+(
+    [wallet_address] => KGLKGLKLHGGLGLGLG
+)
+
+After Update: Array
+(
+    [wallet_address] => zcvzzxvczxzcvcxzv
+)
+
+Received Data: Array
+(
+    [name] => John Doe
+    [email] => johndoe@example.com
+    [wallet_address] => zcvzzxvczxzcvcxzv
+    [current_password] => admin123
+    [new_password] => 123admin
+)
+
+Before Update: Array
+(
+    [wallet_address] => zcvzzxvczxzcvcxzv
+)
+
+After Update: Array
+(
+    [wallet_address] => zcvzzxvczxzcvcxzv
+)
+
+Received Data: Array
+(
+    [name] => Lucas Jonathan 
+    [email] => lujocanas@gmail.com
+    [wallet_address] => hgjdghdfghdjghjdghjdjjh
+)
+
+Before Update: Array
+(
+    [wallet_address] => 
+)
+
+After Update: Array
+(
+    [wallet_address] => hgjdghdfghdjghjdghjdjjh
+)
+
+Received Data: Array
+(
+    [name] => Lucas Jonathan 
+    [email] => lujocanas@gmail.com
+    [wallet_address] => hgjdghdfghdjghjdghjdjjh
+)
+
+Before Update: Array
+(
+    [wallet_address] => hgjdghdfghdjghjdghjdjjh
+)
+
+After Update: Array
+(
+    [wallet_address] => hgjdghdfghdjghjdghjdjjh
+)
+

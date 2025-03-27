@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdraw - Quantum Chain</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <a href="../index.html">
+                    <img src="/placeholder.svg?height=40&width=160" alt="Quantum Chain Logo">
+                </a>
+            </div>
+            <div class="sidebar-menu">
+                <a href="dashboard.html" class="sidebar-menu-item">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="deposit.html" class="sidebar-menu-item">
+                    <i class="fas fa-wallet"></i>
+                    <span>Deposit</span>
+                </a>
+                <a href="withdraw.html" class="sidebar-menu-item active">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span>Withdraw</span>
+                </a>
+                <a href="transactions.html" class="sidebar-menu-item">
+                    <i class="fas fa-history"></i>
+                    <span>Transactions</span>
+                </a>
+                <a href="profile.html" class="sidebar-menu-item">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="#" class="sidebar-menu-item" id="logoutBtn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="topbar">
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="user-info">
+                    <div class="user-name" id="userName">Loading...</div>
+                    <div class="avatar" id="userAvatar">U</div>
+                </div>
+            </div>
+            <div class="content-area">
+                <div class="dashboard-card">
+                    <div class="dashboard-card-header">
+                        <div class="dashboard-card-title">Withdraw Funds</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="info-box">
+                                <h3>Withdrawal Information</h3>
+                                <ul>
+                                    <li>Minimum withdrawal: $50</li>
+                                    <li>Processing time: 24 hours</li>
+                                    <li>Withdrawal fee: 1%</li>
+                                    <li>Your current balance: $<span id="currentBalance">0.00</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <form id="withdrawForm">
+                                <div class="form-group">
+                                    <label for="amount">Amount (USD)</label>
+                                    <input type="number" id="amount" name="amount" min="50" step="1" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="withdrawalMethod">Withdrawal Method</label>
+                                    <select id="withdrawalMethod" name="withdrawalMethod" required>
+                                        <option value="">Select Withdrawal Method</option>
+                                        <option value="bitcoin">Bitcoin</option>
+                                        <option value="ethereum">Ethereum</option>
+                                        <option value="usdt">USDT</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="walletAddress">Wallet Address</label>
+                                    <input type="text" id="walletAddress" name="walletAddress" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Request Withdrawal</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/withdraw.js"></script>
+</body>
+</html>
+

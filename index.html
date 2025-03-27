@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Chain</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+</head>
+<body>
+<header class="main-header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+              <img src="../admin/assets/image/quantumn chain logo.jpg" alt="Quantum Chain Logo">
+            </a>
+          </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="long-term.html">long-term</a></li>
+                <li><a href="packages.html">packages</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="user/login.html" class="btn btn-login">Login</a></li>
+                <li><a href="user/register.html" class="btn btn-signup">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+<section id="hero" class="hero-section">
+    <!-- Hero Content -->
+    <div class="container">
+        <div class="hero-main">
+            <div class="hero-text">
+                <h1>Invest In The Global Digital Financial Market with Quantum Chain.</h1>
+                <h3>At Quantum Chain we combine the expertise of top-tier analysts with the power of cutting-edge AI to deliver exceptional results and maximize your investment potential. Whether you're a seasoned professional or a newcomer to the world of trading, our platform offers a seamless, secure, and intuitive experience designed to help you achieve your financial goals. Join us today and trade with confidence!</h3>
+            </div>
+            <div class="hero-image">
+                <img src="../admin/assets/image/signal.jpg" alt="Signal" style="width:400px; height: 350px;">
+            </div>
+        </div>
+        <!-- Featured On Section -->
+        <div class="featured-section">
+            <div class="featured-on">
+                <div class="featured-logos">
+                    <img src="../admin/assets/image/award.png" alt="CNET" style="width: 130px; height: 50px;">
+                    <p>Rated and Trusted by over 10,000 users</p>
+                    <a href="user/register.html" class="btn btn-primary">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="featured-channel">
+                <img src="../admin/assets/image/channels.png" alt="USA TODAY" style="width: 600px; height: 100px;">
+                </div>
+            </div>
+        </div>
+
+        <!-- TradingView Widget directly in hero section -->
+        <div class="trading-view-ticker">
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+            </div>
+        </div>
+
+          <!-- TradingView Widget Script -->
+  <script type="text/javascript">
+    window.addEventListener("DOMContentLoaded", function() {
+        new TradingView.widget({
+            "symbols": [
+                { "proName": "FOREXCOM:SPXUSD", "title": "S&P 500 Index" },
+                { "proName": "FOREXCOM:NSXUSD", "title": "US 100 Cash CFD" },
+                { "proName": "FX_IDC:EURUSD", "title": "EUR to USD" },
+                { "proName": "BITSTAMP:BTCUSD", "title": "Bitcoin" },
+                { "proName": "BITSTAMP:ETHUSD", "title": "Ethereum" },
+                { "proName": "BINANCE:SOLUSDT", "title": "Solana" },
+                { "proName": "BINANCE:XRPUSDT", "title": "Xrp" },
+                { "proName": "COINBASE:ETHUSD", "title": "Ethereum" },
+                { "proName": "CRYPTOCAP:TOTAL", "title": "Total" },
+                { "proName": "PYTH:XAUUSD", "title": "Gold" },
+                { "proName": "BINANCE:TRUMPUSDT", "title": "Trump" },
+                { "proName": "BINANCE:DOTUSDT", "title": "Dot" },
+                { "proName": "BINANCE:TONUSDT", "title": "Ton" }
+            ],
+            "showSymbolLogo": true,
+            "isTransparent": false,
+            "displayMode": "adaptive",
+            "colorTheme": "light",
+            "locale": "en",
+            "container_id": "tradingview-widget"
+        });
+    });
+  </script>
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async></script>
+  
+
+
+        <!-- Why Trade With Us Section -->
+        <h2 class="section-title why-trade-title">Why Trade With Us?</h2>
+
+        <div class="features-container">
+            <div class="features-wrapper">
+                <div class="features-slider">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h3>User-friendly design</h3>
+                        <p>
+                            Our platform is built with simplicity and ease of use in mind. Whether you're a beginner or an experienced trader, our intuitive interface ensures seamless navigation, smooth transactions, and a hassle-free experience.
+                        </p>
+                    </div>
+        
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Trusted Trading Space</h3>
+                        <p>
+                            We provide a secure and transparent environment where users can trade with confidence. With a strong reputation and a commitment to fairness, we foster a trustworthy community for safe and efficient transactions.
+                        </p>
+                    </div>
+        
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h3>Years of Experience</h3>
+                        <p>
+                            Backed by years of industry expertise, we bring deep knowledge and proven strategies to enhance your trading experience. Our team's experience ensures that you receive top-tier service and reliable support.
+                        </p>
+                    </div>
+        
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Automated Trading System</h3>
+                        <p>
+                            Maximize efficiency with our cutting-edge automated trading system. Designed to execute trades at optimal moments, it eliminates human error and ensures precision, speed, and profitability in every transaction.
+                        </p>
+                    </div>
+        
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-umbrella"></i>
+                        </div>
+                        <h3>Capital Safety Insurance</h3>
+                        <p>
+                            Your investments are safeguarded with our capital safety insurance, offering an added layer of protection. Trade with peace of mind, knowing that your funds are covered against unforeseen risks.
+                        </p>
+                    </div>
+        
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Risk-free Demo</h3>
+                        <p>
+                            Try with demo money before you put your real money in. We allow risk-free demos so you can test our trading bot on the market before any deposit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Mobile View Slider Dots -->
+            <div class="carousel-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+                <span class="dot" data-index="5"></span>
+            </div>
+        </div>
+        
+
+
+        <!-- Stats Section -->
+        <div class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">1700+</div>
+                    <div class="stat-label">Trades per hour count</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">$121 million</div>
+                    <div class="stat-label">In total trade value</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">$600,000</div>
+                    <div class="stat-label">In Weekly Withdrawals</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">2,000</div>
+                    <div class="stat-label">Daily Users</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Withdrawals Section -->
+        <div class="recent-withdrawals-section">
+            <h2 class="section-title">Recent Withdrawals</h2>
+            <div class="withdrawals-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="withdrawalsTicker">
+                        <!-- Withdrawals will be loaded here via JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Investment Plans Section -->
+        <div class="investment-plans-section">
+            <h2 class="section-title">Our Investment Plans</h2>
+            <p class="section-description">We offer flexible investment plans tailored to your financial goals. Whether you seek short-term gains or long-term growth, our diverse options provide stability, profitability, and a strategy that fits your needs. Plans aim to cater to different user needs, from those just starting in crypto trading to seasoned investors.</p>
+            <div class="plans-container">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Starter</h3>
+                        <div class="plan-duration">4 weeks</div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature"><i class="fas fa-check"></i> Ideal for beginners</div>
+                        <div class="feature"><i class="fas fa-check"></i> Low-Risk Introduction</div>
+                        <div class="feature"><i class="fas fa-check"></i> Instant Withdrawals</div>
+                        <div class="feature"><i class="fas fa-check"></i> Support</div>
+                        <div class="feature"><i class="fas fa-check"></i> Dedicated acct Manager</div>
+                        <div class="feature"><i class="fas fa-check"></i> 10% daily profits</div>
+                    </div>
+                    <div class="plan-price">
+                        <div class="price-label">Investment Amount:</div>
+                        <div class="price-value">$500</div>
+                    </div>
+                    <div class="plan-action">
+                        <a href="user/register.html" class="btn btn-primary">Invest Now</a>
+                    </div>
+                </div>
+                
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Gold</h3>
+                        <div class="plan-duration">8 weeks</div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature"><i class="fas fa-check"></i> Ideal for beginners</div>
+                        <div class="feature"><i class="fas fa-check"></i> Low-Risk Introduction</div>
+                        <div class="feature"><i class="fas fa-check"></i> Instant Withdrawals</div>
+                        <div class="feature"><i class="fas fa-check"></i> Support</div>
+                        <div class="feature"><i class="fas fa-check"></i> Dedicated acct Manager</div>
+                        <div class="feature"><i class="fas fa-check"></i> 10% daily profits</div>
+                    </div>
+                    <div class="plan-price">
+                        <div class="price-label">Investment Amount:</div>
+                        <div class="price-value">$1000</div>
+                    </div>
+                    <div class="plan-action">
+                        <a href="user/register.html" class="btn btn-primary">Invest Now</a>
+                    </div>
+                </div>
+                
+                <div class="plan-card recommended">
+                    <div class="plan-tag">Recommended</div>
+                    <div class="plan-header">
+                        <h3>Platinum</h3>
+                        <div class="plan-duration">8 weeks</div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature"><i class="fas fa-check"></i> Ideal for Intermediate</div>
+                        <div class="feature"><i class="fas fa-check"></i> Low-Risk Introduction</div>
+                        <div class="feature"><i class="fas fa-check"></i> Instant Withdrawals</div>
+                        <div class="feature"><i class="fas fa-check"></i> Support</div>
+                        <div class="feature"><i class="fas fa-check"></i> Dedicated acct Manager</div>
+                        <div class="feature"><i class="fas fa-check"></i> 15% daily profits</div>
+                    </div>
+                    <div class="plan-price">
+                        <div class="price-label">Investment Amount:</div>
+                        <div class="price-value">$2000</div>
+                    </div>
+                    <div class="plan-action">
+                        <a href="user/register.html" class="btn btn-primary">Invest Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all-plans">
+                <a href="packages.html" class="btn btn-outline">View all plans</a>
+            </div>
+        </div>
+    </section>
+
+        <!-- Calculator Section -->
+   <section class="calculator-section">
+      <div class="container">
+          <h2 class="section-title">Investment returns Calculator</h2>
+          <p class="section-description">Easily estimate your potential earnings with our Investment Returns Calculator. Simply input your investment details, and our smart tool will provide accurate projections to help you make informed financial decisions.</p>
+          
+          <div class="calculator-container">
+              <div class="calculator-form">
+                  <div class="form-group">
+                      <label for="plan-select">Select plan</label>
+                      <select id="plan-select" class="form-control">
+                          <option value="starter">Starter - 10% daily interest</option>
+                          <option value="gold">Gold - 10% daily interest</option>
+                          <option value="platinum">Platinum - 15% daily interest</option>
+                          <option value="diamond">Diamond - 20% daily interest</option>
+                          <option value="elite">Elite - 25% daily interest</option>
+                          <option value="vip">VIP - 30% daily interest</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                      <label for="investment-amount">Amount</label>
+                      <input type="number" id="investment-amount" class="form-control" value="500" min="500">
+                  </div>
+                  <button id="calculate-btn" class="btn btn-primary">Calculate</button>
+              </div>
+              
+              <div class="calculator-results" id="calculator-results">
+                  <h3>Details</h3>
+                  <div class="result-row">
+                      <div class="result-label">Plan</div>
+                      <div class="result-value" id="result-plan">Starter</div>
+                  </div>
+                  <div class="result-row">
+                      <div class="result-label">Amount</div>
+                      <div class="result-value" id="result-amount">$500</div>
+                  </div>
+                  <div class="result-row">
+                      <div class="result-label">Payment duration</div>
+                      <div class="result-value" id="result-duration">4 weeks</div>
+                  </div>
+                  <div class="result-row">
+                      <div class="result-label">Capital back</div>
+                      <div class="result-value" id="result-capital">$500</div>
+                  </div>
+                  <div class="result-row">
+                      <div class="result-label">Total profit</div>
+                      <div class="result-value" id="result-profit">$7,210.50</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+        <!-- Support Section -->
+        <div class="support-section">
+            <div class="support-container">
+                <div class="support-image">
+                    <img src="../admin/assets/image/customer care.jpg" alt="Support Team" style="width: 500px; height: 600px;">
+                </div>
+                <div class="support-content">
+                    <h2>Need our Help?</h2>
+                    <h3>Get Round-The-Clock Professional Assistance</h3>
+                    <p>No matter the time or day, our expert support team is always available to assist you. Whether you need help troubleshooting an issue or have a question about our services, Your satisfaction is our priority.</p>
+                    <p>We are dedicated to ensuring that all our subscribers, regardless of their selected plan, have continuous access to our support team, available 24/7, all year round.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="long-term.html">Long Term</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Quantum Chain. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+<script src="js/withdrawals.js"></script>
+<script src="js/calculator.js"></script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/67e3fa941c67d81908a52811/1in98llt5';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>
+
